@@ -13,7 +13,7 @@ jobs:
         
       - name: Setup environment
         run: |
-          apt install -y git build-essential cmake libboost-dev libboost-system-dev libboost-filesystem-dev libcurl4-gnutls-dev libenet-dev libfmt-dev libgloox-dev libicu-dev libminiupnpc-dev libnvtt-dev libogg-dev libopenal-dev libpng-dev libsdl2-dev libsodium-dev libvorbis-dev libxml2-dev python rustc subversion zlib1g-dev wx3.0-headers libwxbase3.0-dev libwxgtk3.0-gtk3-dev libwxbase3.0-0v5 libwxgtk3.0-gtk3-0v5
+          sudo apt install -y git build-essential cmake libboost-dev libboost-system-dev libboost-filesystem-dev libcurl4-gnutls-dev libenet-dev libfmt-dev libgloox-dev libicu-dev libminiupnpc-dev libnvtt-dev libogg-dev libopenal-dev libpng-dev libsdl2-dev libsodium-dev libvorbis-dev libxml2-dev python rustc subversion zlib1g-dev wx3.0-headers libwxbase3.0-dev libwxgtk3.0-gtk3-dev libwxbase3.0-0v5 libwxgtk3.0-gtk3-0v5
           git clone --depth=1 https://github.com/0ad/0ad
           cd 0ad/build/workspaces
           ./update-workspaces.sh -j4
